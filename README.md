@@ -31,7 +31,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
  </p>
  
  <p>
-<img src="https://imgur.com/UcrF1lq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/UcrF1lq.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 
  <h3>Create a Virtual Machine</h3>
@@ -46,7 +46,7 @@ Name the Virtual Machine
 </p>
 
 <p>
-<img src="https://imgur.com/GD6UmcV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/GD6UmcV.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 
 
@@ -54,7 +54,7 @@ Name the Virtual Machine
 Log into the VM with Remote Desktop
 
 <p>
-<img src="https://imgur.com/vxWmP1M.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/vxWmP1M.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
@@ -62,7 +62,7 @@ Within the VM (osticket-vm), download the osTicket-Installation-Files.zip and un
 We will use the files in this folder to install osTicket and some of the dependencies.
 </p>
 <p>
-<img src="https://imgur.com/hYCJK0W.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/hYCJK0W.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
@@ -71,9 +71,9 @@ Install / Enable IIS in Windows WITH CGI
 World Wide Web Services -> Application Development Features -> [X] CGI
 </p>
 
-<img src="https://imgur.com/pMLATpb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/pMLATpb.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
-<img src="https://imgur.com/n1WbLJm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/n1WbLJm.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
 <p>
 From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
@@ -83,7 +83,7 @@ From the “osTicket-Installation-Files” folder install the Rewrite Module (re
 Create the directory C:\PHP
 </p>
 
-<img src="https://imgur.com/g5VYdsF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/g5VYdsF.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
 <p>
 From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder
@@ -99,13 +99,13 @@ Password: root
 </p>
 
 <p>
-<img src="https://imgur.com/9M6REEF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/9M6REEF.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
 Open IIS as an Admin
 
-<img src="https://imgur.com/ukLQ6mi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/ukLQ6mi.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
 Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)
 
@@ -124,7 +124,7 @@ Note that some extensions are not enabled
 Go back to IIS, sites -> Default -> osTicket
 Double-click PHP Manager
 
-<img src="https://imgur.com/wGCnqwI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/wGCnqwI.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
 Click “Enable or disable an extension”
 Enable: php_imap.dll
@@ -132,16 +132,16 @@ Enable: php_intl.dll
 Enable: php_opcache.dll
 Refresh the osTicket site in your browser, observe the changes
 
-<img src="https://imgur.com/7Z9Idq5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/7Z9Idq5.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
-<img src="https://imgur.com/4Ktb791.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/4Ktb791.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
 
 Rename: ost-config.php
 From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
-<img src="https://imgur.com/FGqvaIj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/FGqvaIj.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
 Assign Permissions: ost-config.php
 Disable inheritance -> Remove All
@@ -149,7 +149,7 @@ New Permissions -> Everyone -> All
 </p>
 
 <p>
-<img src="https://imgur.com/rwF0zPV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/rwF0zPV.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
@@ -165,7 +165,7 @@ Create a database called “osTicket”
 </p>
 
 <p>
-<img src="https://imgur.com/440GbCE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/440GbCE.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 
 
@@ -179,7 +179,7 @@ Click “Install Now!”
 
 
 <p>
-<img src="https://imgur.com/4tyoPnd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/4tyoPnd.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p>
