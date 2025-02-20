@@ -104,6 +104,7 @@ Password: root
 
 <p>
 Open IIS as an Admin
+</p>
 
 <img src="https://imgur.com/ukLQ6mi.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
