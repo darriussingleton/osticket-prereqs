@@ -71,7 +71,7 @@ Install / Enable IIS in Windows WITH CGI
 World Wide Web Services -> Application Development Features -> [X] CGI
 </p>
 
-<img src="https://imgur.com/n1WbLJm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/pMLATpb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 <img src="https://imgur.com/n1WbLJm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
@@ -105,6 +105,8 @@ Password: root
 <p>
 Open IIS as an Admin
 
+<img src="https://imgur.com/ukLQ6mi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)
 
 Reload IIS (Open IIS, Stop and Start the server)
@@ -121,15 +123,25 @@ On the right, click “Browse *:80”
 Note that some extensions are not enabled
 Go back to IIS, sites -> Default -> osTicket
 Double-click PHP Manager
+
+<img src="https://imgur.com/wGCnqwI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 Click “Enable or disable an extension”
 Enable: php_imap.dll
 Enable: php_intl.dll
 Enable: php_opcache.dll
 Refresh the osTicket site in your browser, observe the changes
 
+<img src="https://imgur.com/7Z9Idq5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<img src="https://imgur.com/4Ktb791.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
 Rename: ost-config.php
 From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+
+<img src="https://imgur.com/FGqvaIj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 Assign Permissions: ost-config.php
 Disable inheritance -> Remove All
