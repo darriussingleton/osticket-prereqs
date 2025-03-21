@@ -5,11 +5,13 @@
 <h1>osTicket - Prerequisites and Installation</h1>
 his tutorial provides a comprehensive guide to the deployment of osTicket, an open-source, web-based ticketing system designed for efficient management of support inquiries. It details the necessary prerequisites, including server environment configurations and database dependencies, and outlines the installation procedure. osTicket aggregates support requests originating from email and web forms into a unified, accessible web interface, facilitating streamlined ticket handling. The system's architecture supports platform-agnostic deployment, leveraging open-source technologies for cost-effective implementation. Key functionalities include:
 
-Customizable Data Structures: Implementation of user-defined fields, forms, and lists, enabling tailored data capture and organization.
-Dynamic Queue Management: Creation of rule-based ticket queues, allowing for automated routing and prioritization based on administrator-defined criteria.
-Advanced Ticket Filtering: Robust filtering capabilities for efficient ticket retrieval and analysis.
-Integrated Knowledge Base: A built-in knowledge management system for documenting solutions and providing self-service support.
-This tutorial serves as a practical resource for students and professionals seeking to implement and manage a scalable support ticketing solution using open-source technologies." <br/>
+<ul>
+  <li><strong>Customizable Data Structures:</strong> Implementation of user-defined fields, forms, and lists, enabling tailored data capture and organization.</li>
+  <li><strong>Dynamic Queue Management:</strong> Creation of rule-based ticket queues, allowing for automated routing and prioritization based on administrator-defined criteria.</li>
+  <li><strong>Advanced Ticket Filtering:</strong> Robust filtering capabilities for efficient ticket retrieval and analysis.</li>
+  <li><strong>Integrated Knowledge Base:</strong> A built-in knowledge management system for documenting solutions and providing self-service support.</li>
+</ul>
+<p>This tutorial serves as a practical resource for students and professionals seeking to implement and manage a scalable support ticketing solution using open-source technologies.</p> <br/>
 
 <h2>Environments and Technologies Used</h2>
 
