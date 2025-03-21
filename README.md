@@ -3,17 +3,17 @@
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket. osTicket is an open source support ticketing system. It integrates inquiries created via email and web-based forms into a easy-to-use  web interface. It can be installed on most operating systems fairly easily and it is completely free. It includes feature like custom fields, forms, and list. You can create custom queues based on criteria specified by admin/creator/owner. It includes ticket filtering features and even has a custom knowledge base you can create and utilize. <br/>
 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
+- Remote Desktop Connection
 - Internet Information Services (IIS)
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
+- Windows 10 (21H2)
 
 <h2>List of Prerequisites</h2>
 
@@ -21,7 +21,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - HeidiSQL
 - PHP
 - osTicket (opensource)
-- IIS and Management Console
+- IIS (server) and Management Console
 
 <h2>Installation Steps</h2>
 
@@ -51,15 +51,22 @@ Name the Virtual Machine
 
 
 
-Log into the VM with Remote Desktop
+<h3>Log into the VM with Remote Desktop<h3>
+On your pc click inside the search and type "remote desktop connection". Once the connection screen opens up you will need to go to the Azure VM and copy the VM's IP address and paste it into the field that says "Computer". Then you will use the username and  password you entered for the VM when you created it. This will allow you you to control the VM from your personal PC.
 
 <p>
 <img src="https://imgur.com/vxWmP1M.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
-
+<h3>Installing osTicket</h3>
 <p>
-Within the VM (osticket-vm), download the osTicket-Installation-Files.zip and unzip it onto your desktop. The folder should be called “osTicket-Installation-Files”
-We will use the files in this folder to install osTicket and some of the dependencies.
+osTicket can be downloaded from their official site or their github repository.
+ <p>Download osTicket from the official website:</p>
+<a href="https://osticket.com/download/">osTicket Download</a>
+<p>View the osTicket source code and contribute on GitHub:</p>
+<a href="https://github.com/osTicket/osTicket">osTicket GitHub Repository</a>
+
+While remotely operating the VM (osticket-vm), download the osTicket-Installation-Files.zip and unzip it onto the desktop (osticket-vm). The folder should be called “osTicket-Installation-Files”
+Use the files in this folder to install osTicket and some of the dependencies.
 </p>
 <p>
 <img src="https://imgur.com/hYCJK0W.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
@@ -80,7 +87,7 @@ From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (
 
 From the “osTicket-Installation-Files” folder install the Rewrite Module (rewrite_amd64_en-US.msi)
 
-Create the directory C:\PHP
+Create a folder named  "C:\PHP"
 </p>
 
 <img src="https://imgur.com/g5VYdsF.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
