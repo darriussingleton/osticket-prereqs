@@ -39,10 +39,17 @@ This tutorial outlines the prerequisites and installation of the open-source hel
  <p>
  Search for a Virtual machine from  the Azure marketplace. Scroll down to find the "Image" option and select "Windows 10 Pro, Version 22H2, x64 Gen2." Ensure the virtual machine has at least 2 vCPUs and 16 GB of memory, which you can set in the "Size" option on the same page.
 
-Name the Virtual Machine
-   Name: osticket-vm
-   Username: labuser
-   Password: osTicketPassword1!
+<ul>
+  <li>
+    <strong>Virtual Machine Name:</strong> osticket-vm
+  </li>
+  <li>
+    <strong>Username:</strong> labuser
+  </li>
+  <li>
+    <strong>Password:</strong> osTicketPassword1!
+  </li>
+</ul>
 </p>
 
 <p>
@@ -90,7 +97,6 @@ From the “osTicket-Installation-Files” folder install the Rewrite Module (re
 Create a folder named  "C:\PHP"
 </p>
 
-<img src="https://imgur.com/g5VYdsF.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
 <p>
 From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder
@@ -101,8 +107,9 @@ From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 (mysql-5
 Typical Setup ->
 Launch Configuration Wizard (after install) ->
 Standard Configuration ->
-Username: root
-Password: root
+<ul>
+ <li>Username: root</li>
+<li><strong>Password: root</strong></li>Password: root
 </p>
 
 <p>
