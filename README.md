@@ -109,7 +109,7 @@ Launch Configuration Wizard (after install) ->
 Standard Configuration ->
 <ul>
  <li>Username: root</li>
-<li><strong>Password: root</strong></li>Password: root
+<li><strong>Password: root</strong></li>
 </p>
 
 <p>
@@ -142,10 +142,12 @@ Double-click PHP Manager
 <img src="https://imgur.com/wGCnqwI.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
 Click “Enable or disable an extension”
-Enable: php_imap.dll
-Enable: php_intl.dll
-Enable: php_opcache.dll
-Refresh the osTicket site in your browser, observe the changes
+<ul>
+  <li>Enable: php_imap.dll</li>
+  <li>Enable: php_intl.dll</li>
+  <li>Enable: php_opcache.dll</li>
+</ul>
+
 
 <img src="https://imgur.com/7Z9Idq5.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
@@ -156,7 +158,6 @@ Rename: ost-config.php
 From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
-<img src="https://imgur.com/FGqvaIj.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
 Assign Permissions: ost-config.php
 Disable inheritance -> Remove All
@@ -168,12 +169,11 @@ New Permissions -> Everyone -> All
 </p>
 
 <p>
-Continue Setting up osTicket in the browser (click Continue)
+Continue Setting up osTicket in the browser 
 Name Helpdesk
 Default email (receives email from customers)
 
 From the “osTicket-Installation-Files” folder, install HeidiSQL.
-Open Heidi SQL
 Create a new session, root/root
 Connect to the session
 Create a database called “osTicket”
@@ -186,10 +186,12 @@ Create a database called “osTicket”
 
 <p>
 Continue Setting up osTicket in the browser
-MySQL Database: osTicket
-MySQL Username: root
-MySQL Password: root
-Click “Install Now!”
+<ul>
+  <li><strong>MySQL Database:</strong> osTicket</li>
+  <li><strong>MySQL Username:</strong> root</li>
+  <li><strong>MySQL Password:</strong> root</li>
+</ul>
+Important Security Note: Using "root" as both the MySQL username and password is extremely insecure and should never be done in a production environment. For development or testing on a local, isolated machine, it might be acceptable, but for anything accessible over a network, you must create a dedicated MySQL user with limited privileges and a strong, unique password.
 </p>
 
 
@@ -198,8 +200,8 @@ Click “Install Now!”
 </p>
 
 <p>
- Congratulations, hopefully it is installed with no errors!
-Browse to your help desk login page: http://localhost/osTicket/scp/login.php
+
+You should be able to browse to your help desk login page: http://localhost/osTicket/scp/login.php
 
 End Users osTicket URL:
 http://localhost/osTicket/ </p>
