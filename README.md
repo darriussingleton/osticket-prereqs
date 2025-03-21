@@ -3,7 +3,13 @@
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket. osTicket is an open source support ticketing system. It integrates inquiries created via email and web-based forms into a easy-to-use  web interface. It can be installed on most operating systems fairly easily and it is completely free. It includes feature like custom fields, forms, and list. You can create custom queues based on criteria specified by admin/creator/owner. It includes ticket filtering features and even has a custom knowledge base you can create and utilize. <br/>
+his tutorial provides a comprehensive guide to the deployment of osTicket, an open-source, web-based ticketing system designed for efficient management of support inquiries. It details the necessary prerequisites, including server environment configurations and database dependencies, and outlines the installation procedure. osTicket aggregates support requests originating from email and web forms into a unified, accessible web interface, facilitating streamlined ticket handling. The system's architecture supports platform-agnostic deployment, leveraging open-source technologies for cost-effective implementation. Key functionalities include:
+
+Customizable Data Structures: Implementation of user-defined fields, forms, and lists, enabling tailored data capture and organization.
+Dynamic Queue Management: Creation of rule-based ticket queues, allowing for automated routing and prioritization based on administrator-defined criteria.
+Advanced Ticket Filtering: Robust filtering capabilities for efficient ticket retrieval and analysis.
+Integrated Knowledge Base: A built-in knowledge management system for documenting solutions and providing self-service support.
+This tutorial serves as a practical resource for students and professionals seeking to implement and manage a scalable support ticketing solution using open-source technologies." <br/>
 
 <h2>Environments and Technologies Used</h2>
 
