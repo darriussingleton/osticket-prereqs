@@ -37,7 +37,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
  <h3>Create a Virtual Machine</h3>
  
  <p>
- Search for a Virtual machine from  the Azure marketplace. Scroll down to find the "Image" option and select "Windows 10 Pro, Version 22H2, x64 Gen2." Ensure the virtual machine has at least 2 vCPUs and 16 GB of memory, which you can set in the "Size" option on the same page.
+ Search for a Virtual machine from  the Azure marketplace. Scroll down to find the "Image" option and select "Windows 10 Pro, Version 22H2, x64 Gen2." Ensure the virtual machine has at least 2 vCPUs and 16 GB of memory, which you can set in the "Size" option on the same page.</p>
 
 <ul>
   <li>
@@ -50,17 +50,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     <strong>Password:</strong> osTicketPassword1!
   </li>
 </ul>
-</p>
-
 <p>
 <img src="https://imgur.com/GD6UmcV.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
-
-
-
-<h3>Log into the VM with Remote Desktop<h3>
-On your pc click inside the search and type "remote desktop connection". Once the connection screen opens up you will need to go to the Azure VM and copy the VM's IP address and paste it into the field that says "Computer". Then you will use the username and  password you entered for the VM when you created it. This will allow you you to control the VM from your personal PC.
-
+<h3>Log into the VM with Remote Desktop</h3>
+ <p>On your pc click inside the search and type "remote desktop connection". Once the connection screen opens up you will need to go to the Azure VM and copy the VM's IP address and paste it into the field that says "Computer". Then you will use the username and  password you entered for the VM when you created it. This will allow you you to control the VM from your personal PC.</p>
 <p>
 <img src="https://imgur.com/vxWmP1M.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
@@ -71,8 +65,10 @@ osTicket can be downloaded from their official site or their github repository.
 <a href="https://osticket.com/download/">osTicket Download</a>
 <p>View the osTicket source code and contribute on GitHub:</p>
 <a href="https://github.com/osTicket/osTicket">osTicket GitHub Repository</a>
+</p>
 
-While remotely operating the VM (osticket-vm), download the osTicket-Installation-Files.zip and unzip it onto the desktop (osticket-vm). The folder should be called “osTicket-Installation-Files”
+
+<p>While remotely operating the VM (osticket-vm), download the osTicket-Installation-Files.zip and unzip it onto the desktop (osticket-vm). The folder should be called “osTicket-Installation-Files”
 Use the files in this folder to install osTicket and some of the dependencies.
 </p>
 <p>
@@ -99,7 +95,7 @@ Create a folder named  "C:\PHP"
 
 
 <p>
-From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder
+From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and place it inside the  “C:\PHP” folder
 
 From the “osTicket-Installation-Files” folder, install VC_redist.x86.exe.
 
@@ -122,7 +118,7 @@ Open IIS as an Admin
 
 <img src="https://imgur.com/ukLQ6mi.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
-Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)
+<p>Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)
 
 Reload IIS (Open IIS, Stop and Start the server)
 
@@ -135,18 +131,19 @@ Reload IIS (Open IIS, Stop and Start the server)
 Go to sites -> Default -> osTicket
 On the right, click “Browse *:80”
 
-Note that some extensions are not enabled
+Some extensions are not enabled so you you will have to manually enable them by
 Go back to IIS, sites -> Default -> osTicket
-Double-click PHP Manager
+Double-click PHP Manager</p>
 
 <img src="https://imgur.com/wGCnqwI.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
-Click “Enable or disable an extension”
+<p>Click “Enable or disable an extension”
 <ul>
   <li>Enable: php_imap.dll</li>
   <li>Enable: php_intl.dll</li>
   <li>Enable: php_opcache.dll</li>
 </ul>
+</p>
 
 
 <img src="https://imgur.com/7Z9Idq5.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
@@ -154,7 +151,7 @@ Click “Enable or disable an extension”
 <img src="https://imgur.com/4Ktb791.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
 
-Rename: ost-config.php
+<p>Rename: ost-config.php
 From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
